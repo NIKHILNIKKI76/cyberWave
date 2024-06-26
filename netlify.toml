@@ -1,0 +1,7 @@
+[build]
+  base = "my-project"
+  publish = "my-project/dist"
+  command = "npm run build"
+
+[functions]
+  directory = "my-project/netlify/functions"
