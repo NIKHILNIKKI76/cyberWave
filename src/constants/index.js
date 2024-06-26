@@ -254,14 +254,16 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
+    light:true,
   },
   {
     id: "1",
     title: "Android Development",
     text: "Android, the user-friendly open-source operating system, has transformed the way we access internet applications and carry out important tasks on our mobile devices. At CODSOFT, we understand the growing preference for mobile usage and offer the ideal starting point for your app development journey. Discover the simplicity of creating your first app with us and unlock a world of endless possibilities in the realm of mobile innovation.",
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
+    backgroundUrl: "./src/assets/benefits/card-2.svg",
     light: true,
   },
   {
@@ -286,6 +288,7 @@ export const benefits = [
     title: "DSA(C++) Programming",
     text: "Gain proficiency in C++ and Data Structures & Algorithms (DSA) programming from the convenience of your home, unlocking doors to lucrative job prospects through our certification program. Join our intensive 4-week internship designed to equip you with essential skills in web application development and deployment using C++ and advanced DSA concepts. Build a robust foundation for your career and gain hands-on experience in real-world implementations within a supportive and collaborative environment.",
     iconUrl: benefitIcon1,
+    backgroundUrl: "./src/assets/benefits/card-4.svg",
     imageUrl: benefitImage2,
   },
   {
@@ -301,6 +304,8 @@ export const benefits = [
     text: "Gain mastery in UI/UX Design from the comfort of your home and open doors to amazing job opportunities with our certification program. Enroll in our intensive 4-week internship, where you'll acquire knowledge in web application development and deployment . Establish a strong base for your career and real-world implementation within a supportive and collaborative setting.",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
+    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    light: true,
   },
   {
     id: "7",
@@ -308,6 +313,8 @@ export const benefits = [
     text: "Gain mastery in Artificial intelligence from the comfort of your home and open doors to amazing job opportunities with our certification program. Enroll in our intensive 4-week internship, where you'll acquire knowledge in web application development and deployment . Establish a strong base for your career and real-world implementation within a supportive and collaborative setting.",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
+    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    light: true,
   },
   {
     id: "8",
@@ -315,6 +322,8 @@ export const benefits = [
     text: "Gain mastery in Machine learning from the comfort of your home and open doors to amazing job opportunities with our certification program. Enroll in our intensive 4-week internship, where you'll acquire knowledge in web application development and deployment . Establish a strong base for your career and real-world implementation within a supportive and collaborative setting.",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
+    backgroundUrl: "./src/assets/benefits/card-3.svg",
+
   },
 ];
 

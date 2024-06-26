@@ -6,9 +6,9 @@ import startUp from "../assets/certified/startUp.png";
 const Pricing = () => {
   return (
     <Section className="overflow-hidden" id="pricing">
-      <div className="container mx-auto py-8 text-center">
-        <h2 className="text-3xl font-bold mb-4">Certified and Registered In</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
+      <div className="container mx-auto py-8 text-center ">
+        <h1 className="text-3xl font-bold mb-4">Certified and Registered In</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mt-10">
           <div className="px-4 mt-8">
             <img
               src={msme}
