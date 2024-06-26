@@ -1,52 +1,44 @@
 import Section from "./Section";
-import { smallSphere, stars } from "../assets";
-import Heading from "./Heading";
-import PricingList from "./PricingList";
-import { LeftLine, RightLine } from "./design/Pricing";
+import iso from "../assets/certified/iso.png";
+import msme from "../assets/certified/msme.png";
+import startUp from "../assets/certified/startUp.png";
 
 const Pricing = () => {
   return (
     <Section className="overflow-hidden" id="pricing">
-      <div className="container relative z-2">
-        <div className="hidden relative justify-center mb-[6.5rem] lg:flex">
-          <img
-            src={smallSphere}
-            className="relative z-1"
-            width={255}
-            height={255}
-            alt="Sphere"
-          />
-          <div className="absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+      <div className="container mx-auto py-8 text-center">
+        <h2 className="text-3xl font-bold mb-4">Certified and Registered In</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
+          <div className="px-4 mt-8">
             <img
-              src={stars}
-              className="w-full"
-              width={950}
-              height={400}
-              alt="Stars"
+              src={msme}
+              alt="Image 1"
+              className="rounded-lg shadow-lg object-cover w-full h-full"
+              style={{ maxWidth: '70%', height: '100%' }}
+            />
+          </div>
+          <div className="px-4 mt-8">
+            <img
+              src={iso}
+              alt="Image 2"
+              className="rounded-lg shadow-lg object-cover w-full h-full"
+              style={{ maxWidth: '70%', height: '100%' }}
+            />
+          </div>
+          <div className="px-4 mt-8">
+            <img
+              src={startUp}
+              alt="Image 3"
+              className="rounded-lg shadow-lg object-cover w-full h-full"
+              style={{ maxWidth: '100%', height: '100%' }}
             />
           </div>
         </div>
 
-        <Heading
-          tag="Get started with CyberWave"
-          title="Pay once, use forever"
-        />
 
-        <div className="relative">
-          <PricingList />
-          <LeftLine />
-          <RightLine />
-        </div>
-
-        <div className="flex justify-center mt-10">
-          <a
-            className="text-xs font-code font-bold tracking-wider uppercase border-b"
-            href="/pricing"
-          >
-            See the full details
-          </a>
-        </div>
       </div>
+
+
     </Section>
   );
 };

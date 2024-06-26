@@ -1,78 +1,56 @@
 import Button from "./Button";
 import Heading from "./Heading";
 import Section from "./Section";
-import Tagline from "./Tagline";
-import { roadmap } from "../constants";
-import { check2, grid, loading1 } from "../assets";
-import { Gradient } from "./design/Roadmap";
+
 
 const Roadmap = () => (
   <Section className="overflow-hidden" id="roadmap">
     <div className="container md:pb-10">
-      <Heading tag="Ready to get started" title="What we’re working on" />
+      <Heading tag="Ready to get started" title="Who are we...?" />
 
-      <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
-        {roadmap.map((item) => {
-          const status = item.status === "done" ? "Done" : "In progress";
-
-          return (
-            <div
-              className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] ${
-                item.colorful ? "bg-conic-gradient" : "bg-n-6"
-              }`}
-              key={item.id}
-            >
-              <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
-                <div className="absolute top-0 left-0 max-w-full">
-                  <img
-                    className="w-full"
-                    src={grid}
-                    width={550}
-                    height={550}
-                    alt="Grid"
-                  />
-                </div>
-                <div className="relative z-1">
-                  <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
-                    <Tagline>{item.date}</Tagline>
-
-                    <div className="flex items-center px-4 py-1 bg-n-1 rounded text-n-8">
-                      <img
-                        className="mr-2.5"
-                        src={item.status === "done" ? check2 : loading1}
-                        width={16}
-                        height={16}
-                        alt={status}
-                      />
-                      <div className="tagline">{status}</div>
-                    </div>
-                  </div>
-
-                  <div className="mb-10 -my-10 -mx-15">
-                    <img
-                      className="w-full"
-                      src={item.imageUrl}
-                      width={628}
-                      height={426}
-                      alt={item.title}
-                    />
-                  </div>
-                  <h4 className="h4 mb-4">{item.title}</h4>
-                  <p className="body-2 text-n-4">{item.text}</p>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-
-        <Gradient />
+      <div className="section-content opacity-50">
+        <p>
+          At <span className="company-name">CyberWave</span>, we are pioneers in blending innovation with reliability. Our journey began with a vision to redefine technological boundaries and empower businesses worldwide. With a team of passionate experts, we specialize in crafting cutting-edge solutions that propel our clients towards unparalleled success. Committed to excellence and driven by creativity, we are dedicated to shaping the future of digital transformation. Join us on this transformative journey and experience the power of innovation with <span className="company-name">CyberWave</span>.
+        </p>
       </div>
 
-      <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
+      <Heading title="Why Choose Us?" className="mt-8 opacity-90" />
+      <div className="section-content opacity-50">
+        <p>
+          At <span className="company-name">CyberWave</span>, we offer more than just an internship experience. Here's why you should choose us:
+        </p>
+        <ul className="list-disc ml-6">
+          <li>Opportunity to work with cutting-edge technologies and solutions.</li>
+          <li>Mentorship from industry experts to guide your learning and growth.</li>
+          <li>A supportive and inclusive work environment that encourages creativity and innovation.</li>
+          <li>Exciting goodies such as t-shirts, bottles, and more for completing tasks on time.</li>
+        </ul>
+      </div>
+
+      <div className="goodies-section flex flex-col items-center mt-8">
+        <h2 className="text-2xl font-bold mb-4">Goodies</h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="goodie-item flex flex-col items-center justify-center">
+            <img src="/path/to/image1.jpg" alt="Goodie 1" className="w-full h-auto rounded-lg mb-2" />
+            <p className="text-sm">Exciting T-Shirts</p>
+          </div>
+
+          <div className="goodie-item flex flex-col items-center justify-center">
+            <img src="/path/to/image2.jpg" alt="Goodie 2" className="w-full h-auto rounded-lg mb-2" />
+            <p className="text-sm">Stylish Water Bottles</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="flex justify-center mt-12 md:mt-15 xl:mt-20 opacity-70">
         <Button href="/roadmap">Our roadmap</Button>
       </div>
     </div>
   </Section>
 );
+
+
 
 export default Roadmap;

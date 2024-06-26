@@ -44,22 +44,22 @@ import {
 export const navigation = [
   {
     id: "0",
-    title: "Features",
+    title: "Courses Offered",
     url: "#features",
   },
   {
     id: "1",
-    title: "Pricing",
+    title: "Certified In",
     url: "#pricing",
   },
   {
     id: "2",
-    title: "How to use",
+    title: "Services Offered",
     url: "#how-to-use",
   },
   {
     id: "3",
-    title: "Roadmap",
+    title: "About Us",
     url: "#roadmap",
   },
   {
