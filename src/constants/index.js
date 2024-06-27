@@ -259,7 +259,7 @@ export const benefits = [
   {
     id: "1",
     title: "Android Development",
-    text: "Android, the user-friendly open-source operating system, has transformed the way we access internet applications and carry out important tasks on our mobile devices. At CODSOFT, we understand the growing preference for mobile usage and offer the ideal starting point for your app development journey. Discover the simplicity of creating your first app with us and unlock a world of endless possibilities in the realm of mobile innovation.",
+    text: "Gain practical work experience in Android development through our internship program, where you'll dive into crafting and enhancing mobile applications. This opportunity presents real-world projects and engaging challenges, providing hands-on experience in dynamic fields like mobile app development and UI/UX design. Join our award-winning innovation team and embark on a journey towards success in a supportive and enriching environment.",
     
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -269,7 +269,7 @@ export const benefits = [
   {
     id: "2",
     title: "Data Science",
-    text: "Remote Data Science Internships Are A Unique Chance To Gain Experience In The Midst Of The Virtual Workforce While Remaining Immersed In One Of The Top Organizations In The Field. Data Analysis Internships Are Some Of The Most Competitive And Popular Within The Broader Data Science Field.",
+    text: "Get hands-on experience in data science with our internship program. You'll work on real-world projects, analyzing and interpreting complex datasets. This program offers engaging challenges in areas like machine learning, statistical analysis, and data visualization. Become a part of our award-winning innovation team and take the first step towards a successful career in a supportive and enriching environment.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
@@ -277,7 +277,7 @@ export const benefits = [
   {
     id: "3",
     title: "Java Programming",
-    text: "convenience of your own home and unlock incredible job prospects with our certification program. Join our comprehensive 4-week internship program, where you'll learn everything from web application development to deployment using Java Build a solid foundation for your career with hands-on training and real-world application in a supportive and collaborative environment.",
+    text: "Embark on a journey to master Java programming with our internship program. You'll engage in real-world projects, developing and optimizing Java-based applications. This program offers practical challenges and hands-on experience in areas such as software development, object-oriented programming, and system architecture. Join our award-winning innovation team and lay the foundation for a successful career in a supportive and enriching environment.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -286,7 +286,7 @@ export const benefits = [
   {
     id: "4",
     title: "DSA(C++) Programming",
-    text: "Gain proficiency in C++ and Data Structures & Algorithms (DSA) programming from the convenience of your home, unlocking doors to lucrative job prospects through our certification program. Join our intensive 4-week internship designed to equip you with essential skills in web application development and deployment using C++ and advanced DSA concepts. Build a robust foundation for your career and gain hands-on experience in real-world implementations within a supportive and collaborative environment.",
+    text: "Advance your skills in Data Structures and Algorithms (DSA) with our C++ programming internship program. You'll tackle real-world projects, honing your expertise in algorithm design, data management, and problem-solving. This program provides practical challenges and hands-on experience in core areas like sorting, searching, and optimizing data structures. Join our award-winning innovation team and build a successful career in a supportive and enriching environment.",
     iconUrl: benefitIcon1,
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     imageUrl: benefitImage2,
@@ -294,14 +294,14 @@ export const benefits = [
   {
     id: "5",
     title: "Python Programming",
-    text: "Join our 4-week comprehensive internship program and master the fundamentals of programming in Python from the comfort of your own home. Gain the skills and knowledge to apply for exciting job opportunities in the field. In this program, you will learn everything from web development to the deployment of Python-based web applications. Get certified and enhance your career prospects. Don't miss this opportunity to excel in Python programming!",
+    text: "Enhance your Python programming skills with our internship program. You'll work on real-world projects, focusing on areas like automation, web development, and data analysis. This program offers practical challenges and hands-on experience, helping you master Python's versatile capabilities. Join our award-winning innovation team and set the stage for a successful career in a supportive and enriching environment.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
   }, {
     id: "6",
     title: "UI/UX Design",
-    text: "Gain mastery in UI/UX Design from the comfort of your home and open doors to amazing job opportunities with our certification program. Enroll in our intensive 4-week internship, where you'll acquire knowledge in web application development and deployment . Establish a strong base for your career and real-world implementation within a supportive and collaborative setting.",
+    text: "Explore the world of UI/UX design with our internship program. You'll work on real-world projects, creating user-friendly and visually appealing interfaces. This program offers practical challenges and hands-on experience in areas like user research, wireframing, prototyping, and usability testing. Join our award-winning innovation team and pave the way for a successful career in a supportive and enriching environment.",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
     backgroundUrl: "./src/assets/benefits/card-2.svg",
@@ -310,7 +310,7 @@ export const benefits = [
   {
     id: "7",
     title: "Artificial intelligence",
-    text: "Gain mastery in Artificial intelligence from the comfort of your home and open doors to amazing job opportunities with our certification program. Enroll in our intensive 4-week internship, where you'll acquire knowledge in web application development and deployment . Establish a strong base for your career and real-world implementation within a supportive and collaborative setting.",
+    text: "Dive into the field of artificial intelligence with our internship program. You'll engage in real-world projects, developing and applying AI models and algorithms. This program offers practical challenges and hands-on experience in areas like machine learning, natural language processing, and computer vision. Join our award-winning innovation team and embark on a journey towards a successful career in a supportive and enriching environment.",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
     backgroundUrl: "./src/assets/benefits/card-2.svg",
@@ -319,7 +319,7 @@ export const benefits = [
   {
     id: "8",
     title: "Machine learning",
-    text: "Gain mastery in Machine learning from the comfort of your home and open doors to amazing job opportunities with our certification program. Enroll in our intensive 4-week internship, where you'll acquire knowledge in web application development and deployment . Establish a strong base for your career and real-world implementation within a supportive and collaborative setting.",
+    text: "Immerse yourself in the world of machine learning with our internship program. You'll work on real-world projects, building and refining predictive models and algorithms. This program offers practical challenges and hands-on experience in areas like supervised and unsupervised learning, neural networks, and data analysis. Join our award-winning innovation team and take the first step towards a successful career in a supportive and enriching environment.",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
     backgroundUrl: "./src/assets/benefits/card-3.svg",
