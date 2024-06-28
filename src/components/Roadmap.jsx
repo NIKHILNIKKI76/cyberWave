@@ -1,8 +1,9 @@
 import Button from "./Button";
 import Heading from "./Heading";
 import Section from "./Section";
-
-
+import bronze from "../assets/goddie0.png"
+import silver from "../assets/goddie1.png"
+import gold from "../assets/goddie2.png"
 const Roadmap = () => (
   <Section className="overflow-hidden" id="roadmap">
     <div className="container md:pb-10">
@@ -28,24 +29,31 @@ const Roadmap = () => (
       </div>
 
       <div className="goodies-section flex flex-col items-center mt-8">
-        <h2 className="text-2xl font-bold mb-4">Goodies</h2>
+        <Heading title="Goodies" className="mt-8 opacity-90" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="goodie-item flex flex-col items-center justify-center">
-            <img src="/path/to/image1.jpg" alt="Goodie 1" className="w-full h-auto rounded-lg mb-2" />
-            <p className="text-sm">Exciting T-Shirts</p>
+            <img src={bronze} alt="Goodie 1" className="w-full md:w-1/2 h-auto rounded-lg mb-2" />
+            <p className="text-center mt-2">Bronze</p>
           </div>
 
           <div className="goodie-item flex flex-col items-center justify-center">
-            <img src="/path/to/image2.jpg" alt="Goodie 2" className="w-full h-auto rounded-lg mb-2" />
-            <p className="text-sm">Stylish Water Bottles</p>
+            <img src={silver} alt="Goodie 2" className="w-full md:w-1/2 h-auto rounded-lg mb-2" />
+            <p className="text-center mt-2">Silver</p>
+          </div>
+
+          <div className="goodie-item flex flex-col items-center justify-center">
+            <img src={gold} alt="Goodie 3" className="w-full md:w-1/2 h-auto rounded-lg mb-2" />
+            <p className="text-center mt-2">Gold</p>
           </div>
         </div>
+
       </div>
 
 
+
       <div className="flex justify-center mt-12 md:mt-15 xl:mt-20 opacity-70">
-        <Button href="/roadmap">Our roadmap</Button>
+        <Button href="/roadmap">Apply Now</Button>
       </div>
     </div>
   </Section>
