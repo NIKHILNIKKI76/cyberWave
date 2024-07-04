@@ -38,7 +38,7 @@ const Hero = () => {
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
           Unlock Your Potential with CyberWave: Leading Internships in the Tech Industry.
           </p>
-          <Button href="/pricing" white>
+          <Button href="https://docs.google.com/forms/d/e/1FAIpQLSf6ZnxoCY-vc0r9y7GltZonEKZSJvW_muftVc_EG_mk8XgOeg/viewform" white>
             Get started
           </Button>
         </div>

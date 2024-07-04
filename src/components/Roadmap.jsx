@@ -29,9 +29,9 @@ const Roadmap = () => (
       </div>
 
       <div className="goodies-section flex flex-col items-center mt-8">
-        <Heading title="Goodies" className="mt-8 opacity-90" />
+        <Heading title="Goodies" className="mt-4 opacity-90" /> {/* Adjusted margin top */}
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 "> {/* Further adjusted margin top */}
           <div className="goodie-item flex flex-col items-center justify-center">
             <img src={bronze} alt="Goodie 1" className="w-full md:w-1/2 h-auto rounded-lg mb-2" />
             <p className="text-center mt-2">Bronze</p>
@@ -47,13 +47,13 @@ const Roadmap = () => (
             <p className="text-center mt-2">Gold</p>
           </div>
         </div>
-
       </div>
 
 
 
+
       <div className="flex justify-center mt-12 md:mt-15 xl:mt-20 opacity-70">
-        <Button href="/roadmap">Apply Now</Button>
+        <Button href="https://docs.google.com/forms/d/e/1FAIpQLSf6ZnxoCY-vc0r9y7GltZonEKZSJvW_muftVc_EG_mk8XgOeg/viewform">Apply Now</Button>
       </div>
     </div>
   </Section>

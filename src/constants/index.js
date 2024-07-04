@@ -64,8 +64,8 @@ export const navigation = [
   },
   {
     id: "4",
-    title: "New account",
-    url: "#signup",
+    title: "DSA COMPETITIONS",
+    url: "#DSACompetitionsInfo",
     onlyMobile: true,
   },
   {

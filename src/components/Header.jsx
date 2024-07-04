@@ -1,6 +1,6 @@
+import React from 'react';
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-
 import { brainwave } from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
@@ -27,6 +27,31 @@ const Header = () => {
 
     enablePageScroll();
     setOpenNavigation(false);
+  };
+
+  const handleScrollToDSACompetitions = (event) => {
+    event.preventDefault();
+    
+    // Calculate the height of your fixed header/navbar
+    const headerHeight = 100; // Replace with your actual header height
+    
+    // Get the target element
+    const dsaCompetitionsInfo = document.getElementById('dsa-competitions-info');
+    
+    // Calculate the scroll position, subtracting the header height
+    if (dsaCompetitionsInfo) {
+      const scrollPosition = dsaCompetitionsInfo.offsetTop - headerHeight;
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: 'smooth'
+      });
+    }
+    
+    // Close navigation if it's open
+    if (openNavigation) {
+      enablePageScroll();
+      setOpenNavigation(false);
+    }
   };
 
   return (
@@ -68,14 +93,12 @@ const Header = () => {
         </nav>
 
         <a
-          href="#signup"
+          href="#dsa-competitions-info"
+          onClick={handleScrollToDSACompetitions}
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
-          New account
+          DSA COMPETITIONS
         </a>
-        <Button className="hidden lg:flex" href="#login">
-          Sign in
-        </Button>
 
         <Button
           className="ml-auto lg:hidden"

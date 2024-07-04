@@ -35,7 +35,7 @@ const Benefits = () => {
                   />
                   <a
                     className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider cursor-pointer"
-                    href="https://www.google.com"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSf6ZnxoCY-vc0r9y7GltZonEKZSJvW_muftVc_EG_mk8XgOeg/viewform"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
