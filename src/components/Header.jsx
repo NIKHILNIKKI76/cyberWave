@@ -54,6 +54,31 @@ const Header = () => {
     }
   };
 
+  const handleScrollToRoadmap = (event) => {
+    event.preventDefault();
+    
+    // Calculate the height of your fixed header/navbar
+    const headerHeight = 100; // Replace with your actual header height
+    
+    // Get the target element
+    const roadmapSection = document.getElementById('roadmap-section');
+    
+    // Calculate the scroll position, subtracting the header height
+    if (roadmapSection) {
+      const scrollPosition = roadmapSection.offsetTop - headerHeight;
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: 'smooth'
+      });
+    }
+    
+    // Close navigation if it's open
+    if (openNavigation) {
+      enablePageScroll();
+      setOpenNavigation(false);
+    }
+  };
+
   return (
     <div
       className={`fixed top-0 left-0 w-full z-50  border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
@@ -75,7 +100,7 @@ const Header = () => {
               <a
                 key={item.id}
                 href={item.url}
-                onClick={handleClick}
+                onClick={item.id === 'certification-tiers' ? handleScrollToRoadmap : handleClick}
                 className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
                 } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${

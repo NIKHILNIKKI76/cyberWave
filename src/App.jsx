@@ -8,6 +8,7 @@ import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
 import CertificateDetails from "./components/certificatDetails";
 import DSACompetitionsInfo from "./components/DSACompetitionsInfo";
+import About from "./components/About";
 const App = () => {
   return (
     <>
@@ -15,12 +16,13 @@ const App = () => {
         <Header />
         <Hero />
         <Benefits />
-        <DSACompetitionsInfo/>
+        <Roadmap />
         <Services />
         {/* <Pricing />  */}
-
-        <Roadmap />
-        <CertificateDetails/>
+        <DSACompetitionsInfo/>
+        {/* <CertificateDetails/> */}
+        
+        <About/>
         <Footer />
       </div>
 

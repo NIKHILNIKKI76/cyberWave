@@ -7,8 +7,6 @@ import {
   chromecast,
   disc02,
   discord,
-  discordBlack,
-  facebook,
   figma,
   file02,
   framer,
@@ -49,8 +47,9 @@ export const navigation = [
   },
   {
     id: "1",
-    title: "Certified In",
-    url: "#pricing",
+    title: "Certified Tiers",
+    url: "#roadmap",
+
   },
   {
     id: "2",
@@ -60,7 +59,7 @@ export const navigation = [
   {
     id: "3",
     title: "About Us",
-    url: "#roadmap",
+    url: "#about",
   },
   {
     id: "4",
@@ -328,34 +327,24 @@ export const benefits = [
 ];
 
 export const socials = [
-  {
-    id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
-  },
+ 
   {
     id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
+    title: "Instagram",
+    iconUrl: instagram,
+    url: "https://www.instagram.com/cyberwave.info/",
   },
   {
     id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
+    title: "Linkedin",
+    iconUrl: telegram,
+    url: "https://www.linkedin.com/in/cyberwave-3aa991317/",
   },
   {
     id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
+    title: "Twitter",
+    iconUrl: twitter,
+    url: "https://x.com/CyberWaveinfo",
   },
-  {
-    id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
-  },
+  
 ];
