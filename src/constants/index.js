@@ -250,7 +250,7 @@ export const benefits = [
     id: "0",
     title: "Web Development",
     text: "Gain practical work experience in web development through our internship program, where you'll dive into crafting and improving web-based systems. This opportunity presents real-world projects and engaging challenges, providing hands-on experience in dynamic fields like web and app development. Join our award-winning innovation team and embark on a journey towards success in a supportive and enriching environment.",
-    backgroundUrl: "./src/assets/benefits/card-1.svg",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
     light:true,
@@ -262,14 +262,14 @@ export const benefits = [
     
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",
     light: true,
   },
   {
     id: "2",
     title: "Data Science",
     text: "Get hands-on experience in data science with our internship program. You'll work on real-world projects, analyzing and interpreting complex datasets. This program offers engaging challenges in areas like machine learning, statistical analysis, and data visualization. Become a part of our award-winning innovation team and take the first step towards a successful career in a supportive and enriching environment.",
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
@@ -277,7 +277,7 @@ export const benefits = [
     id: "3",
     title: "Java Programming",
     text: "Embark on a journey to master Java programming with our internship program. You'll engage in real-world projects, developing and optimizing Java-based applications. This program offers practical challenges and hands-on experience in areas such as software development, object-oriented programming, and system architecture. Join our award-winning innovation team and lay the foundation for a successful career in a supportive and enriching environment.",
-    backgroundUrl: "./src/assets/benefits/card-4.svg",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
     light: true,
@@ -287,7 +287,7 @@ export const benefits = [
     title: "DSA(C++) Programming",
     text: "Advance your skills in Data Structures and Algorithms (DSA) with our C++ programming internship program. You'll tackle real-world projects, honing your expertise in algorithm design, data management, and problem-solving. This program provides practical challenges and hands-on experience in core areas like sorting, searching, and optimizing data structures. Join our award-winning innovation team and build a successful career in a supportive and enriching environment.",
     iconUrl: benefitIcon1,
-    backgroundUrl: "./src/assets/benefits/card-4.svg",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",
     imageUrl: benefitImage2,
   },
   {
@@ -303,7 +303,7 @@ export const benefits = [
     text: "Explore the world of UI/UX design with our internship program. You'll work on real-world projects, creating user-friendly and visually appealing interfaces. This program offers practical challenges and hands-on experience in areas like user research, wireframing, prototyping, and usability testing. Join our award-winning innovation team and pave the way for a successful career in a supportive and enriching environment.",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",
     light: true,
   },
   {
@@ -312,7 +312,7 @@ export const benefits = [
     text: "Dive into the field of artificial intelligence with our internship program. You'll engage in real-world projects, developing and applying AI models and algorithms. This program offers practical challenges and hands-on experience in areas like machine learning, natural language processing, and computer vision. Join our award-winning innovation team and embark on a journey towards a successful career in a supportive and enriching environment.",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",
     light: true,
   },
   {
@@ -321,7 +321,7 @@ export const benefits = [
     text: "Immerse yourself in the world of machine learning with our internship program. You'll work on real-world projects, building and refining predictive models and algorithms. This program offers practical challenges and hands-on experience in areas like supervised and unsupervised learning, neural networks, and data analysis. Join our award-winning innovation team and take the first step towards a successful career in a supportive and enriching environment.",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",
 
   },
 ];
