@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6">
-          {` `}
+            {` `}
             <span className="inline-block relative">
               CyberWave{" "}
               <img
@@ -36,7 +36,7 @@ const Hero = () => {
             </span> Where Internships Shape the Future of Technology and Innovation.
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-          Unlock Your Potential with CyberWave: Leading Internships in the Tech Industry.
+            Unlock Your Potential with CyberWave: Leading Internships in the Tech Industry.
           </p>
           <Button href="https://docs.google.com/forms/d/e/1FAIpQLSf6ZnxoCY-vc0r9y7GltZonEKZSJvW_muftVc_EG_mk8XgOeg/viewform" white>
             Get started
@@ -83,7 +83,7 @@ const Hero = () => {
             <img
               src={heroBackground}
               className="w-full"
-              width={1440}
+              width={1024}
               height={1800}
               alt="hero"
             />
@@ -91,6 +91,7 @@ const Hero = () => {
 
           <BackgroundCircles />
         </div>
+        
 
         <CompanyLogos className="relative z-10 mt-20 lg:block" />
       </div>
