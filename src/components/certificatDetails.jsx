@@ -20,7 +20,7 @@ const CertificateDetails = () => {
     },
   ];
 
-  const applyLink = 'https://docs.google.com/forms/d/e/1FAIpQLSf6ZnxoCY-vc0r9y7GltZonEKZSJvW_muftVc_EG_mk8XgOeg/viewform';
+  const applyLink = 'https://docs.google.com/forms/d/e/1FAIpQLSeZQdDcHyb8d7jRe15FlOsBGS8mRr_xW8emuXPiXNfXp8ca4Q/viewform';
 
   return (
     <div className="max-w-4xl mx-auto p-4">

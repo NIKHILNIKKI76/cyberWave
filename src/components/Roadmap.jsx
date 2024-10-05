@@ -28,7 +28,7 @@ const Roadmap = () => (
       </div>
 
       <div className="flex justify-center mt-12 md:mt-15 xl:mt-20 opacity-70">
-        <Button href="https://docs.google.com/forms/d/e/1FAIpQLSf6ZnxoCY-vc0r9y7GltZonEKZSJvW_muftVc_EG_mk8XgOeg/viewform">Apply Now</Button>
+        <Button href="https://docs.google.com/forms/d/e/1FAIpQLSeZQdDcHyb8d7jRe15FlOsBGS8mRr_xW8emuXPiXNfXp8ca4Q/viewform">Apply Now</Button>
       </div>
     </div>
   </Section>

@@ -33,12 +33,12 @@ const Hero = () => {
                 height={28}
                 alt="Curve"
               />
-            </span> Where Internships Shape the Future of Technology and Innovation.
+            </span> Shaping the Future: A Course in Cutting-Edge Technology
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            Unlock Your Potential with CyberWave: Leading Internships in the Tech Industry.
+          Unlock Your Potential with CyberWave: Expert-Led Courses in the Tech Industry
           </p>
-          <Button href="https://docs.google.com/forms/d/e/1FAIpQLSf6ZnxoCY-vc0r9y7GltZonEKZSJvW_muftVc_EG_mk8XgOeg/viewform" white>
+          <Button href="https://docs.google.com/forms/d/e/1FAIpQLSeZQdDcHyb8d7jRe15FlOsBGS8mRr_xW8emuXPiXNfXp8ca4Q/viewform" white>
             Get started
           </Button>
         </div>

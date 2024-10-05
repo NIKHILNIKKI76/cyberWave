@@ -59,19 +59,11 @@ export const navigation = [
     id: "3",
     title: "About Us",
     url: "#about",
-  },
-  {
-    id: "4",
-    title: "DSA COMPETITIONS",
-    url: "#DSACompetitionsInfo",
-    onlyMobile: true,
-  },
-  {
-    id: "5",
-    title: "Sign in",
-    url: "#login",
-    onlyMobile: true,
-  },
+  },{
+    id:"4",
+    title:"Certificate-verification",
+    url:"#certificateVerification",
+  }
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
@@ -335,7 +327,7 @@ export const socials = [
     id: "2",
     title: "LinkedIn",
     iconUrl: telegram,
-    url: "https://www.linkedin.com/in/cyberwave-3aa991317/",
+    url: "https://www.linkedin.com/company/cyberwave-info/?viewAsMember=true",
   },
   {
     id: "3",

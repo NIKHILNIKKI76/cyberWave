@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto mt-10">
+        <h1 class="text-2xl font-bold text-center mb-5">Student Details</h1>
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-xl font-semibold">Student ID: <%= student.id %></h2>
+            <p class="mt-2">
+                <% if (!hasCrossed) { %>
+                  <strong><%= student.name %></strong> successfully completed a <strong><%= student.preferredInternshipDomain %> </strong> course in <strong>cyberwave</strong> from 
+                  <%= new Date(student.date).toLocaleDateString("en-US", { month: 'long', day: 'numeric', year: 'numeric' }) %> to 
+                  <%= new Date(new Date(student.date).setDate(student.date.getDate() + 30)).toLocaleDateString("en-US", { month: 'long', day: 'numeric', year: 'numeric' }) %>
+                  <% } else { %>
+                    <strong><%= student.name %></strong> began a <strong><%= student.preferredInternshipDomain %></strong> course at <strong>cyberwave</strong> on 
+                    <%= new Date(student.date).toLocaleDateString("en-US", { year: 'numeric', month: 'numeric', day: 'numeric' }) %>
+                    . The course is currently in progress.
+                  <% } %>
+              </p>
+        </div>
+    </div>
+</body>
+</html>

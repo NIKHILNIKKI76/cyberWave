@@ -16,7 +16,9 @@ const About = () => (
       <Heading title="Why Choose Us?" className="mt-8 opacity-90" />
       <div className="section-content opacity-50">
         <p>
-          At <span className="company-name">CyberWave</span>, we offer more than just an internship experience. Here's why you should choose us:
+          At <span className="company-name">CyberWave</span>,We offer more than just a course experience. Here’s why you should choose us:
+
+
         </p>
         <ul className="list-disc ml-6">
           <li>Opportunity to work with cutting-edge technologies and solutions.</li>

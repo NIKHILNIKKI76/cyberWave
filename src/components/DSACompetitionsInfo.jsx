@@ -35,7 +35,7 @@ const DSACompetitionsInfo = () => {
                 Registration is now open! Don't miss your chance to showcase your skills and win prizes.
             </p>
             <div className="flex justify-center mt-12 md:mt-15 xl:mt-20 opacity-70">
-                <Button href="https://docs.google.com/forms/d/e/1FAIpQLSf6ZnxoCY-vc0r9y7GltZonEKZSJvW_muftVc_EG_mk8XgOeg/viewform">Register Now</Button>
+                <Button href="https://docs.google.com/forms/d/e/1FAIpQLSc-roeW6tpxcVNLuQfljm3Ho7BsxcgwBUOqGXOKS601ZNx6qQ/viewform">Register Now</Button>
             </div>
             <p className="text-sm text-gray-400 mt-4">
                 Hurry, limited slots available!

@@ -9,6 +9,7 @@ import Services from "./components/Services";
 import CertificateDetails from "./components/certificatDetails";
 import DSACompetitionsInfo from "./components/DSACompetitionsInfo";
 import About from "./components/About";
+import CertificateVerification from "./components/certificateVerification";
 const App = () => {
   return (
     <>
@@ -17,11 +18,11 @@ const App = () => {
         <Hero />
         <Benefits />
         <Roadmap />
+        <CertificateVerification />
         <Services />
         {/* <Pricing />  */}
         <DSACompetitionsInfo/>
         {/* <CertificateDetails/> */}
-        
         <About/>
         <Footer />
       </div>
