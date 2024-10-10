@@ -6,9 +6,10 @@ import studentsData from './models/idModel.js';
 import path from 'path';
 import { fileURLToPath } from 'url'; // Import fileURLToPath
 import { dirname } from 'path'; // Import dirname
-import ServerlessHttp from 'serverless-http';
+import serverlessHttp from 'serverless-http'; // Correct the import case for serverless-http
 
-const router = Router();
+const app = express();
+const router = express.Router(); // Import Router from express
 
 // Load environment variables
 dotenv.config();
@@ -17,18 +18,15 @@ dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Create an instance of Express
-const app = express();
-
 // Middleware to parse incoming requests with JSON payloads
 app.use(express.json());
-app.use(bodyParser.json());
 
 // Set up EJS as the view engine
 app.set('view engine', 'ejs');
 
 // Set the views directory
 app.set('views', path.join(__dirname, 'views'));
+
 // MongoDB connection function
 const connectDB = async () => {
     try {
@@ -40,23 +38,16 @@ const connectDB = async () => {
     }
 };
 
-// Start the server and connect to the database
-const PORT = process.env.PORT || 5000;
+// Connect to the database when the server starts
+connectDB(); // Uncommented to ensure connection happens
+
 function isDateCrossed(studentDate) {
-    // Create a Date object from the student's date
     const studentDateObj = new Date(studentDate);
-    
-    // Add 30 days to the student's date
     const futureDate = new Date(studentDateObj);
     futureDate.setDate(futureDate.getDate() + 30);
-    
-    // Get the current date
     const currentDate = new Date();
-    
-    // Check if the future date has crossed the current date
     return futureDate > currentDate;
 }
-
 
 // Route to find student by ID using query parameter
 router.get('/student', async (req, res) => {
@@ -64,10 +55,7 @@ router.get('/student', async (req, res) => {
     try {
         const student = await studentsData.findOne({ id: id });
         if (student) {
-            // Check if the outcome date has crossed the current date
             const hasCrossed = isDateCrossed(student.date); // Assuming student.date is the date to check
-            
-            // Render EJS with student data and the hasCrossed status
             res.render('student', { student, hasCrossed });
         } else {
             res.status(404).send('No student found with the given ID.');
@@ -78,27 +66,20 @@ router.get('/student', async (req, res) => {
     }
 });
 
-
 // Serve static files from the 'dist' directory (sibling of the 'backend' folder)
 app.use(express.static(path.join(__dirname, '../dist')));
 
 // Handle all other requests by serving the 'index.html' file from the 'dist' directory
 router.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../dist', 'index.html'));
+    res.sendFile(path.join(__dirname, '../dist', 'index.html'));
 });
 
 // Simple route
 router.get('/', (req, res) => {
     res.send('Server is up and running');
 });
-// app.listen(PORT, async () => {
-//     console.log(`Server is running on port ${PORT}`);
-//     await connectDB(); // Connect to the database
-// });
 
-app.use("/api",router);
-export const handler = Serverless(app);
+app.use("/api", router);
 
-
-
-
+// Export the handler for serverless deployment
+export const handler = serverlessHttp(app);
