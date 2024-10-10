@@ -1,7 +1,14 @@
 [build]
-  functions="netlify/functions"
+  functions = "netlify/functions"
+
 [[redirects]]
   force = true
   from = "/api/*"
   status = 200
   to = "/.netlify/functions/api/:splat"
+
+[[redirects]]
+  from = "/student"
+  to = "/.netlify/functions/api/student"
+  status = 200
+  force = true
