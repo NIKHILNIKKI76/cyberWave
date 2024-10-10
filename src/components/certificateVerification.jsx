@@ -3,7 +3,7 @@ import Button from './Button'; // Assuming Button component is imported
 import Heading from './Heading';
 
 // Use the base URL from environment variables
-const baseUrl = process.env.REACT_APP_BASE_URL || 'https://cyberwave.info';
+const baseUrl = process.env.REACT_APP_BASE_URL;
 
 function CertificateVerification() {
   const [certificateId, setCertificateId] = useState('');
