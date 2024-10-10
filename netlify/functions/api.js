@@ -1,18 +1,16 @@
-// Import required modules using ES6 module syntax
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import studentsData from './models/idModel.js';
 import path from 'path';
-import { fileURLToPath } from 'url'; // Import fileURLToPath
-import { dirname } from 'path'; // Import dirname
-import serverlessHttp from 'serverless-http'; // Correct the import case for serverless-http
+import { fileURLToPath } from 'url'; 
+import { dirname } from 'path';
+import serverlessHttp from 'serverless-http'; 
+
+dotenv.config(); // Load environment variables
 
 const app = express();
-const router = express.Router(); // Import Router from express
-
-// Load environment variables
-dotenv.config();
+const router = express.Router(); 
 
 // Create __dirname equivalent for ES modules
 const __filename = fileURLToPath(import.meta.url);
@@ -23,8 +21,6 @@ app.use(express.json());
 
 // Set up EJS as the view engine
 app.set('view engine', 'ejs');
-
-// Set the views directory
 app.set('views', path.join(__dirname, 'views'));
 
 // MongoDB connection function
@@ -39,7 +35,7 @@ const connectDB = async () => {
 };
 
 // Connect to the database when the server starts
-connectDB(); // Uncommented to ensure connection happens
+connectDB();
 
 function isDateCrossed(studentDate) {
     const studentDateObj = new Date(studentDate);
@@ -51,11 +47,11 @@ function isDateCrossed(studentDate) {
 
 // Route to find student by ID using query parameter
 router.get('/student', async (req, res) => {
-    const { id } = req.query; // Get ID from query parameters
+    const { id } = req.query; 
     try {
         const student = await studentsData.findOne({ id: id });
         if (student) {
-            const hasCrossed = isDateCrossed(student.date); // Assuming student.date is the date to check
+            const hasCrossed = isDateCrossed(student.date); 
             res.render('student', { student, hasCrossed });
         } else {
             res.status(404).send('No student found with the given ID.');
@@ -66,15 +62,15 @@ router.get('/student', async (req, res) => {
     }
 });
 
-// Serve static files from the 'dist' directory (sibling of the 'backend' folder)
+// Serve static files from the 'dist' directory
 app.use(express.static(path.join(__dirname, '../dist')));
 
-// Handle all other requests by serving the 'index.html' file from the 'dist' directory
+// Handle all other requests by serving the 'index.html' file
 router.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../dist', 'index.html'));
 });
 
-// Simple route
+// Basic route
 router.get('/', (req, res) => {
     res.send('Server is up and running');
 });

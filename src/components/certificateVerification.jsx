@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from './Button'; // Assuming Button component is imported
+import Button from './Button'; 
 import Heading from './Heading';
 
 // Use the base URL from environment variables
@@ -24,7 +24,7 @@ function CertificateVerification() {
   return (
     <section id="certificateVerification">
       <div className="certificate-verification-container">
-        <Heading title="Certificate Verification" className="mt-4 opacity-90" /> {/* Adjusted margin top */}
+        <Heading title="Certificate Verification" className="mt-4 opacity-90" /> 
         <form onSubmit={handleSubmit} className="certificate-verification-form flex flex-col items-center">
           <label htmlFor="certificateId" className="certificate-verification-label">
             Enter Certificate ID:
@@ -37,10 +37,8 @@ function CertificateVerification() {
             required
             className="certificate-verification-input"
           />
-
-          {/* Center the form elements using flexbox */}
           <div className="certificate-verification-button-container mt-4">
-            <Button onClick={handleSubmit}>Verify</Button>
+            <Button type="submit">Verify</Button>
           </div>
         </form>
       </div>

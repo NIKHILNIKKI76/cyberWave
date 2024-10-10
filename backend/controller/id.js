@@ -1,15 +1,14 @@
-// controllers/internshipController.js
-import studentsData from '../models/idModel.js'; // Adjust the path as necessary
+import studentsData from '../models/idModel.js'; 
 
 // Controller to get an application by ID
 export const getApplicationById = async (req, res) => {
-    const { id } = req.params; // Get ID from request parameters
+    const { id } = req.params; 
     try {
-        const application = await studentsData.findOne({ id }); // Search for the application by ID
+        const application = await studentsData.findOne({ id }); 
         if (!application) {
             return res.status(404).json({ message: 'Application not found' });
         }
-        res.json(application); // Return the found application
+        res.json(application); 
     } catch (err) {
         console.error('Error while fetching application:', err);
         res.status(500).json({ message: 'Server Error' });
