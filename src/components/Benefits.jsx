@@ -8,7 +8,21 @@ import ClipPath from "../assets/svg/ClipPath";
 const Benefits = () => {
   return (
     <Section id="features">
-      <div className="container relative z-2" >
+      <div className="container relative z-2">
+        {/* Centered Link to the Assessment Platform */}
+        <div className="flex flex-col justify-center items-center mb-10 text-4xl font-bold text-white-800 transition-transform hover:scale-110">
+  <span>Ready to test your skills?</span>
+  <a
+    href="https://cyberwaveassessmentplatform.netlify.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-2 text-blue-600 hover:text-blue-700 underline transition-colors"
+  >
+    Click Here to Explore Different Domains
+  </a>
+</div>
+
+
         <Heading
           className="md:max-w-md lg:max-w-2xl"
           title="Empower your skills with CyberWave: Streamline your path to success."
@@ -17,11 +31,7 @@ const Benefits = () => {
         <div className="flex flex-wrap gap-6 mb-10">
           {benefits.map((item) => (
             <div
-            className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] border-4 border-gray-400 rounded-lg"
-            style={{
-                //  backgroundImage: `url(${item.backgroundUrl})`,
-                // backgroundImage: 'linear-gradient(45deg, #f3ec78, #af4261) 2',
-              }}
+              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] border-4 border-gray-400 rounded-lg"
               key={item.id}
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.3rem] rounded-lg">
@@ -67,7 +77,6 @@ const Benefits = () => {
 
               <ClipPath />
             </div>
-
           ))}
         </div>
       </div>

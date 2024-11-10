@@ -12,7 +12,7 @@ function CertificateVerification() {
     event.preventDefault();
 
     // Build the verification link with the entered ID
-    const verificationLink = `${baseUrl}/api/student?id=${certificateId}`;
+    const verificationLink = `${baseUrl}/student?id=${certificateId}`;
 
     // Open the EJS page in a new tab
     window.open(verificationLink, '_blank');

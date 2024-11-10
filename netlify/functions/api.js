@@ -1,7 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import studentsData from './models/idModel.js';
+import studentsData from '../../backend/models/idModel.js';
 import path from 'path';
 import { fileURLToPath } from 'url'; 
 import { dirname } from 'path';
@@ -34,6 +34,13 @@ const connectDB = async () => {
     }
 };
 
+
+app.get('/api/*', (req, res) => {
+    // Handle dynamic API routes
+    res.send('API route works!');
+  });
+
+  
 // Connect to the database when the server starts
 connectDB();
 
